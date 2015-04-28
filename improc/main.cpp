@@ -16,13 +16,13 @@ int main(int argc, const char * argv[]) {
     cv::namedWindow("image1", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
     cv::Mat proc_img = cv::Mat();
     
-    cv::cvtColor(src_img, proc_img, CV_RGB2GRAY);
     for(int i = 0; i < src_img.cols;i ++){
         for(int j = 0; j < src_img.rows; j++){
-            src_img.data[(i*src_img.rows+j)*3 + 2] += 20;
+            src_img.data[(i*src_img.rows+j)*3] += 100;
             
         }
     }
+    cv::cvtColor(src_img, proc_img, CV_RGB2GRAY);
     cv::imshow("image1", proc_img);
     cv::waitKey(0);
     return 0;
