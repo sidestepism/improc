@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F94351201AEF50C1004FC766 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F943511F1AEF50C1004FC766 /* main.cpp */; };
+		F943512A1AEF514D004FC766 /* libopencv_contrib.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F94351261AEF514D004FC766 /* libopencv_contrib.2.4.8.dylib */; };
+		F943512B1AEF514D004FC766 /* libopencv_core.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F94351271AEF514D004FC766 /* libopencv_core.2.4.8.dylib */; };
+		F943512C1AEF514D004FC766 /* libopencv_features2d.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F94351281AEF514D004FC766 /* libopencv_features2d.2.4.8.dylib */; };
+		F943512D1AEF514D004FC766 /* libopencv_imgproc.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F94351291AEF514D004FC766 /* libopencv_imgproc.2.4.8.dylib */; };
+		F943512F1AEF525B004FC766 /* libopencv_highgui.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F943512E1AEF525B004FC766 /* libopencv_highgui.2.4.8.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		F943511C1AEF50C1004FC766 /* improc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = improc; sourceTree = BUILT_PRODUCTS_DIR; };
 		F943511F1AEF50C1004FC766 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F94351261AEF514D004FC766 /* libopencv_contrib.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_contrib.2.4.8.dylib; path = ../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_contrib.2.4.8.dylib; sourceTree = "<group>"; };
+		F94351271AEF514D004FC766 /* libopencv_core.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.8.dylib; path = ../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_core.2.4.8.dylib; sourceTree = "<group>"; };
+		F94351281AEF514D004FC766 /* libopencv_features2d.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_features2d.2.4.8.dylib; path = ../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_features2d.2.4.8.dylib; sourceTree = "<group>"; };
+		F94351291AEF514D004FC766 /* libopencv_imgproc.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.2.4.8.dylib; path = ../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_imgproc.2.4.8.dylib; sourceTree = "<group>"; };
+		F943512E1AEF525B004FC766 /* libopencv_highgui.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.8.dylib; path = ../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_highgui.2.4.8.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F943512F1AEF525B004FC766 /* libopencv_highgui.2.4.8.dylib in Frameworks */,
+				F943512A1AEF514D004FC766 /* libopencv_contrib.2.4.8.dylib in Frameworks */,
+				F943512B1AEF514D004FC766 /* libopencv_core.2.4.8.dylib in Frameworks */,
+				F943512C1AEF514D004FC766 /* libopencv_features2d.2.4.8.dylib in Frameworks */,
+				F943512D1AEF514D004FC766 /* libopencv_imgproc.2.4.8.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +56,11 @@
 		F94351131AEF50C1004FC766 = {
 			isa = PBXGroup;
 			children = (
+				F943512E1AEF525B004FC766 /* libopencv_highgui.2.4.8.dylib */,
+				F94351261AEF514D004FC766 /* libopencv_contrib.2.4.8.dylib */,
+				F94351271AEF514D004FC766 /* libopencv_core.2.4.8.dylib */,
+				F94351281AEF514D004FC766 /* libopencv_features2d.2.4.8.dylib */,
+				F94351291AEF514D004FC766 /* libopencv_imgproc.2.4.8.dylib */,
 				F943511E1AEF50C1004FC766 /* improc */,
 				F943511D1AEF50C1004FC766 /* Products */,
 			);
@@ -205,6 +225,15 @@
 		F94351241AEF50C1004FC766 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/opencv/2.4.8.2/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +241,15 @@
 		F94351251AEF50C1004FC766 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/opencv/2.4.8.2/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
