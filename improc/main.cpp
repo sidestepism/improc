@@ -17,8 +17,9 @@ int main(int argc, const char * argv[]) {
     cv::Mat proc_img = cv::Mat();
     
     cv::cvtColor(src_img, proc_img, CV_RGB2GRAY);
-    for(int i = 0; i < ;i ++){
-        for(int j = 0; j <; j++){
+    for(int i = 0; i < src_img.cols;i ++){
+        for(int j = 0; j < src_img.rows; j++){
+            src_img.data[(i*src_img.rows+j)*3 + 2] += 20;
             
         }
     }
